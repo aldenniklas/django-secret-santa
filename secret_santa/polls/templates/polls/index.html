@@ -1,0 +1,22 @@
+
+
+<ul>
+    <p>Registrerade:</p>
+    {% for santa in list_of_santas %}
+        <li>
+            {{ santa.name }}
+        </li>
+    {% endfor %}
+</ul>
+
+<ul>
+    <h1>Anmäl dig här:</h1>
+    {% block content %}
+    <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Anmäl dig</button>
+    </form>
+{% endblock %}
+</ul>
+   
