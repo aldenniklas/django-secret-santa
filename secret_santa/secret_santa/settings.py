@@ -54,7 +54,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'secret_santap.urls'
+ROOT_URLCONF = 'secret_santa.urls'
 
 TEMPLATES = [
     {
