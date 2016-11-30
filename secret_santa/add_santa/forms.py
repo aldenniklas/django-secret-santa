@@ -5,7 +5,7 @@ class add_santa(forms.Form):
     santa_email = forms.EmailField(required=True, label='Email')
     santa_wishlist = forms.CharField(
         required=False,
-        label='Onskelista',
+        label= 'Onskelista',
         widget=forms.Textarea
         )
     santa_restrictions = forms.CharField(required=False,label='Restriktioner')

@@ -22,7 +22,7 @@ def index(request):
             restrictions = request.POST.get('santa_restrictions', ''))
         new_santa.save()
     
-    template = loader.get_template('polls/index.html')
+    template = loader.get_template('add_santa/index.html')
     context = {
         'list_of_santas': list_of_santas,
         'form': form_class

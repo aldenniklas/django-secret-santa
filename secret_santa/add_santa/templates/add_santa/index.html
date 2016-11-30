@@ -1,13 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'add_santa/style.css' %}" />
 
+<br><br><br>
 
 <ul>
-    <p>Registrerade:</p>
+    <h1>Registrerade:</h1>
     {% for santa in list_of_santas %}
-        <li>
+        <p>
             {{ santa.name }}
-        </li>
+        </p>
     {% endfor %}
 </ul>
+
+<br><br>
 
 <ul>
     <h1>Anmäl dig här:</h1>
