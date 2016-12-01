@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    background: white url("images/background.jpg") no-repeat right bottom;
+}
+
+h1 {
+    font-family: Cursive;
+    color: green;
+    font-size: 20px;
+}
+
+p {
+    font-family: Cursive;
+}
