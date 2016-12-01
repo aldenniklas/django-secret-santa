@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     #'whitenoise.runserver_nostatic',
-    #'django.contrib.staticfiles',
+    'django.contrib.staticfiles',
     'add_santa.apps.AddSantaConfig',
 ]
 
@@ -56,7 +56,16 @@ MIDDLEWARE_CLASSES = [
 
 ROOT_URLCONF = 'secret_santa.urls'
 
-#STATICFILES_DIRS = ()
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, 'static'),
+]
 
 TEMPLATES = [
     {
